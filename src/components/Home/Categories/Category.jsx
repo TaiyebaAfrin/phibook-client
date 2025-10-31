@@ -8,16 +8,17 @@ const Category = () => {
   useEffect(() => {
     apiClient.get("/categories").then((res) => setCategories(res.data));
   }, []);
+  
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
       {/* Category Heading  */}
       <div className="flex justify-between items-center mb-8">
-        <h2 className="text-3xl font-bold">Browse Categories</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Shop By Category</h2>
         <a
           href="#"
-          className="btn btn-secondary px-6 py-6 rounded-full text-lg"
+          className="btn btn-primary px-6 py-3 rounded-full text-lg bg-green-600 hover:bg-green-700 text-white"
         >
-          View All
+          View All Categories
         </a>
       </div>
 

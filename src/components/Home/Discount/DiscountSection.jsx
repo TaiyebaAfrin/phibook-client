@@ -1,5 +1,5 @@
-import bgImg from "../../../assets/images/banner-image-bg-1.jpg";
-import bannerImg from "../../../assets/images/banner-image3.png";
+import bgImg from "../../../assets/images/bnerimage.jpeg";
+import bannerImg from "../../../assets/images/gpone.png";
 import DiscountTimer from "./DiscountTimer";
 const DiscountSection = () => {
   return (
@@ -20,7 +20,7 @@ const DiscountSection = () => {
           </h1>
           {/* CountDown Timer  */}
           <DiscountTimer />
-          <button className="btn btn-secondary px-6 py-3 rounded-full shadow-md">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
             Shop Collection
           </button>
         </div>

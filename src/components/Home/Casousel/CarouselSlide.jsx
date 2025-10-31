@@ -1,4 +1,5 @@
-import bgImg from "../../../assets/images/banner-image-bg.jpg";
+import { Link } from "react-router";
+import bgImg from "../../../assets/images/banner-image-bgg.jpg";
 
 const CarouselSlide = ({ title, subtitle, image }) => {
   return (
@@ -13,8 +14,8 @@ const CarouselSlide = ({ title, subtitle, image }) => {
             {title}
           </h1>
           <p className="text-gray-600 my-4">{subtitle}</p>
-          <button className="btn btn-secondary px-6 py-3 rounded-full shadow-md">
-            Shop Product
+          <button className="bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
+              <Link to="/shop">Shop Product</Link>
           </button>
         </div>
 

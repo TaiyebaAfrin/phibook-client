@@ -1,5 +1,5 @@
 import axios from "axios";
 
 export default axios.create({
-  baseURL: "https://phibook-pearl.vercel.app/api/v1",
+  baseURL: "https://groceryshop-rho.vercel.app/api/v1",
 });

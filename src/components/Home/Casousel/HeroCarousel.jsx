@@ -9,25 +9,25 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import CarouselSlide from "./CarouselSlide";
-import book from "../../../assets/images/book.png";
-import fashion from "../../../assets/images/fashion.png";
-import technology from "../../../assets/images/technology.png";
+import book from "../../../assets/images/gpone.png";
+import fashion from "../../../assets/images/gptwo.png";
+import technology from "../../../assets/images/gpthree.png";
 
 const HeroCarousel = () => {
   const slides = [
     {
-      title: "This Fine Print Book Collections",
+      title: "Freshness You Can Trust, Prices You’ll Love.",
       subtitle: "Discount available. Grab it now!",
       image: book,
     },
     {
-      title: "Exclusive Fashion Collections",
-      subtitle: "A specialists label creating luxury essentials!",
+      title: "FreshMart",
+      subtitle: "Simple, modern, and trustworthy",
       image: fashion,
     },
     {
-      title: "Your Digital World, Connected.",
-      subtitle: "Explore a range of devices for seamless living.",
+      title: "Daily Harvest Market",
+      subtitle: "Emphasizes freshness and everyday shopping.",
       image: technology,
     },
   ];

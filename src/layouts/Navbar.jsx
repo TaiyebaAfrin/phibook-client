@@ -5,6 +5,16 @@ import useCartContext from "../hooks/useCartContext";
 const Navbar = () => {
   const { user, logoutUser } = useAuthContext();
   const { cart } = useCartContext();
+
+  const categories = [
+    { name: "Fruits & Vegetables", path: "/category/fruits-vegetables" },
+    { name: "Dairy & Eggs", path: "/category/dairy-eggs" },
+    { name: "Meat & Poultry", path: "/category/meat-poultry" },
+    { name: "Bakery", path: "/category/bakery" },
+    { name: "Beverages", path: "/category/beverages" },
+    { name: "Snacks", path: "/category/snacks" }
+  ];
+
   return (
     <div className="navbar bg-base-100 shadow-sm">
       <div className="navbar-start">
@@ -31,46 +41,46 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/shop">Shop</Link>
             </li>
+            <li>
+              <details>
+                <summary>Categories</summary>
+                <ul>
+                  {categories.map((category) => (
+                    <li key={category.path}>
+                      <Link to={category.path}>{category.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Phibook</a>
+        <Link to="/" className="btn btn-ghost text-xl">Grocery Shop</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <details>
-              <summary>Home</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <Link to="/shop">Shop</Link>
+          </li>
+          <li>
+            <details>
+              <summary>Categories</summary>
+              <ul className="p-2 bg-base-100 rounded-t-none w-52">
+                {categories.map((category) => (
+                  <li key={category.path}>
+                    <Link to={category.path}>{category.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </details>
           </li>
         </ul>
       </div>
@@ -159,10 +169,10 @@ const Navbar = () => {
           </div>
         ) : (
           <div className="flex gap-3">
-            <Link to="/login" className="btn btn-secondary">
+            <Link to="/login" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
               Login
             </Link>
-            <Link to="/register" className="btn btn-secondary">
+            <Link to="/register" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300">
               Register
             </Link>
           </div>

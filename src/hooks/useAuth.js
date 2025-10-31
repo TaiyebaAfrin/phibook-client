@@ -115,13 +115,7 @@ const useAuth = () => {
   };
 
   return {
-    user,
-    errorMsg,
-    loginUser,
-    registerUser,
-    logoutUser,
-    updateUserProfile,
-    changePassword,
+    user, errorMsg, loginUser, registerUser, logoutUser, updateUserProfile, changePassword,
   };
 };
 

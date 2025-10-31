@@ -29,7 +29,7 @@ const Product = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Trending Products</h2>
           <a
             href="#"
-            className="btn btn-secondary px-6 py-6 rounded-full text-lg"
+            className="btn bg-green-600 hover:bg-green-700 text-white font-semibold px-7 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300"
           >
             View All
           </a>
