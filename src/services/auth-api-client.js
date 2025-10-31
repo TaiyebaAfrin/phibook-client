@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const authApiClient = axios.create({
-  baseURL: "https://groceryshop-rho.vercel.app/api/v1",
+  baseURL: "https://backend-groceryshop.vercel.app/api/v1",
 });
 
 export default authApiClient;
