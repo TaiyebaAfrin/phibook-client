@@ -108,10 +108,7 @@ const OrderCard = ({ order, onCancel }) => {
         </div>
         {!user.is_staff && order.status === "Not Paid" && (
           <button
-            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors"
-            onClick={handlePayment}
-            disabled={loading}
-          >
+            className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors" onClick={handlePayment} disabled={loading}>
             {loading ? "Processing..." : "Pay Now"}
           </button>
         )}

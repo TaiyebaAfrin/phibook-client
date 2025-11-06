@@ -6,14 +6,14 @@ const Navbar = () => {
   const { user, logoutUser } = useAuthContext();
   const { cart } = useCartContext();
 
-  const categories = [
-    { name: "Fruits & Vegetables", path: "/category/fruits-vegetables" },
-    { name: "Dairy & Eggs", path: "/category/dairy-eggs" },
-    { name: "Meat & Poultry", path: "/category/meat-poultry" },
-    { name: "Bakery", path: "/category/bakery" },
-    { name: "Beverages", path: "/category/beverages" },
-    { name: "Snacks", path: "/category/snacks" }
-  ];
+  // const categories = [
+  //   { name: "Fruits & Vegetables", path: "/category/fruits-vegetables" },
+  //   { name: "Dairy & Eggs", path: "/category/dairy-eggs" },
+  //   { name: "Meat & Poultry", path: "/category/meat-poultry" },
+  //   { name: "Bakery", path: "/category/bakery" },
+  //   { name: "Beverages", path: "/category/beverages" },
+  //   { name: "Snacks", path: "/category/snacks" }
+  // ];
 
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -46,7 +46,7 @@ const Navbar = () => {
             <li>
               <Link to="/shop">Shop</Link>
             </li>
-            <li>
+            {/* <li>
               <details>
                 <summary>Categories</summary>
                 <ul>
@@ -57,7 +57,7 @@ const Navbar = () => {
                   ))}
                 </ul>
               </details>
-            </li>
+            </li> */}
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost text-xl">Grocery Shop</Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
           <li>
             <Link to="/shop">Shop</Link>
           </li>
-          <li>
+          {/* <li>
             <details>
               <summary>Categories</summary>
               <ul className="p-2 bg-base-100 rounded-t-none w-52">
@@ -81,7 +81,7 @@ const Navbar = () => {
                 ))}
               </ul>
             </details>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="navbar-end">
@@ -152,7 +152,7 @@ const Navbar = () => {
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-                <li>
+                {/* <li>
                   <a className="justify-between">
                     Profile
                     <span className="badge">New</span>
@@ -160,7 +160,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a>Settings</a>
-                </li>
+                </li> */}
                 <li>
                   <a onClick={logoutUser}>Logout</a>
                 </li>

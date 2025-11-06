@@ -1,5 +1,5 @@
 import { FiMenu, FiX } from "react-icons/fi";
-import { Link } from "react-router";
+// import { Link } from "react-router";
 
 const Navbar = ({ sidebarOpen }) => {
   return (
@@ -30,7 +30,7 @@ const Navbar = ({ sidebarOpen }) => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li>
+            {/* <li>
               <Link href="/profile" className="justify-between">
                 Profile
                 <span className="badge">New</span>
@@ -38,10 +38,10 @@ const Navbar = ({ sidebarOpen }) => {
             </li>
             <li>
               <Link href="/settings">Settings</Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <button>Logout</button>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

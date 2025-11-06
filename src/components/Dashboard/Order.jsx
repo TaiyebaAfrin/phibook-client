@@ -23,7 +23,7 @@ const Order = () => {
                 </td>
                 <td>Mar 8, 2025</td>
                 <td>$125.00</td>
-              </tr>
+              {/* </tr>
               <tr>
                 <td>#ORD-7244</td>
                 <td>Sarah Johnson</td>
@@ -42,7 +42,7 @@ const Order = () => {
                 <td>Mar 7, 2025</td>
                 <td>$245.50</td>
               </tr>
-              <tr>
+              <tr> */}
                 <td>#ORD-7242</td>
                 <td>Emily Davis</td>
                 <td>

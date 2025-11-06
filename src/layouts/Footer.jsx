@@ -1,19 +1,28 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
       <nav>
-        <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
+        <h1 className="footer-title">
+          <Link to="/">Grocery Shop</Link>
+        </h1>
+        <p>
+          From our shelves to your table, <br />
+          Grocery Shop is proud to serve our community
+          <br /> with quality, care, and convenience.
+        </p>
+        {/* <a className="link link-hover">Branding</a>
         <a className="link link-hover">Design</a>
         <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <a className="link link-hover">Advertisement</a> */}
       </nav>
       <nav>
-        <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <h6 className="footer-title">Our Pages</h6>
+        <Link to="/" className="link link-hover">Home</Link>
+        <Link to="/shop" className="link link-hover">Shop</Link>
+        {/* <a className="link link-hover">Jobs</a>
+        <a className="link link-hover">Press kit</a> */}
       </nav>
       <nav>
         <h6 className="footer-title">Social</h6>
